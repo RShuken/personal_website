@@ -1,0 +1,167 @@
+/* must use these  
+doctypeX, htmlX, headX, body, metaX, titleX,
+ h1, h2, h3, p, link, ul, ol, img, a, hr
+
+ must use these containers : 
+ containers like main, article, and footer.
+
+ must use these properties: 
+  background, color, font-family, font-size,
+ height, margin, padding, text-align 
+ 
+ Styled links using pseudo-classes
+Comments throughout your HTML and CSS
+ 
+ */
+
+/* these are the styles for each section of the website */
+header {
+background: rgba(0, 0, 0, 0.255);
+}
+/* This is the nav menue for the top and bottom of the site */
+nav {
+  border: 2px solid #000;
+  padding: 10px;
+  margin: 20px 20px 0 0;
+  width: 50%;
+  float: right;
+  color: black;
+}
+/* this I don't fully understand but it works */
+header:after, 
+nav:after {
+  content: " ";
+  display: table;
+  clear: both;
+}  
+
+body {
+background: white;
+position: cover;
+}
+
+main {
+
+}
+
+article {
+
+}
+
+div {
+  width: 500px;
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  
+}
+
+footer {
+    background-color: darkgray;
+    margin: 200px 0 0 0;
+    padding: 20px 0;
+}
+
+link {
+  display: none;
+}
+
+/* these are the text styles used in the page */
+h1 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: left;
+}
+.title {
+  color: black;
+  padding: 20px 0px 20px 50px;
+  margin: 0;
+  float: left;
+  text-align: center; 
+}
+
+h2 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+h3 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: left;
+}
+
+p {
+  color: black;
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* these are the styles for the unorderd list, orderd list */
+ul {
+color: grey;
+}
+ol {
+color: grey;
+}
+li {
+color: grey;
+}
+
+/* this is the style for all images and a class for rounded images */
+img {
+text-align: center;
+width: 500px;
+height: 500px; 
+}
+.image-round {
+    border-radius: 50%; 
+}
+
+/* this is for all anchor links and the style of them as well as the style after it is visited, hovered and active */
+a:link {
+  color: blue;
+  text-decoration: underline;
+  cursor: auto;
+}
+a:visited {
+  color: purple;
+  text-decoration: underline;
+  cursor: auto;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+  cursor: auto;
+}
+a:active {
+  color: white;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+/* this is the horizontal ruler using an image to make it fancy*/
+hr {
+  width: 600px;
+	height: 32px;
+	border: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+	background-image: url("images/divider.png");
+}
+/* this is a dimaond class attribute for the hr above */
+.diamond {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: #000;
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  transform: rotate(45deg);
+}
